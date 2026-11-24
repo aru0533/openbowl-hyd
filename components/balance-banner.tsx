@@ -15,22 +15,18 @@ export function BalanceBanner({ summary }: BalanceBannerProps) {
 
   return (
     <section aria-labelledby="transparency-heading" className="relative overflow-hidden">
-      <div
-        aria-hidden
-        className="pointer-events-none absolute inset-x-0 -top-24 h-72 bg-[radial-gradient(ellipse_at_top,var(--color-amber-200),transparent_70%)] opacity-60"
-      />
       <div className="relative mx-auto max-w-6xl px-4 pt-10 pb-12 sm:px-6 sm:pt-16">
         <div className="max-w-2xl">
           <p className="inline-flex items-center gap-1.5 rounded-full border border-emerald-200 bg-emerald-50 px-3 py-1 text-xs font-semibold text-emerald-800 sm:text-sm">
             <ShieldCheckIcon className="size-4 shrink-0" />
             100% of funds go strictly to dog food &amp; medical care
           </p>
-          <h1
+          <h2
             id="transparency-heading"
-            className="mt-4 text-3xl font-bold tracking-tight text-balance text-stone-900 sm:text-5xl"
+            className="mt-4 text-3xl font-bold tracking-tight text-balance text-stone-900 sm:text-4xl"
           >
             Every rupee in. Every rupee out. In public.
-          </h1>
+          </h2>
           <p className="mt-3 text-base text-pretty text-stone-600 sm:text-lg">
             OpenBowl feeds and treats Hyderabad&apos;s street dogs. Each donation is listed
             with its UPI reference, and each spend with a shop receipt and feeding photo.

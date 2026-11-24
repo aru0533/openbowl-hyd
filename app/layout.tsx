@@ -13,9 +13,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "OpenBowl Hyderabad — Transparent Street Dog Feeding Fund",
+  title: "OpenBowl Hyderabad — Leo's Legacy | Transparent Street Dog Feeding Fund",
   description:
-    "A 100% transparent street dog feeding & care fund for Hyderabad. Every donation and every rupee spent, published with UPI references and shop receipts.",
+    "In loving memory of Leo — a 100% transparent street dog feeding & care fund for Hyderabad. Every donation and every rupee spent, published with UPI references and shop receipts.",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {

@@ -1,6 +1,7 @@
 import { BalanceBanner } from "@/components/balance-banner";
 import { DonationsLedger } from "@/components/donations-ledger";
 import { ExpenseFeed } from "@/components/expense-feed";
+import { LeoTribute } from "@/components/leo-tribute";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
 import { SponsorSection } from "@/components/sponsor-section";
@@ -14,6 +15,7 @@ export default function Home() {
     <>
       <SiteHeader />
       <main className="flex-1">
+        <LeoTribute />
         <BalanceBanner summary={summary} />
         <SponsorSection tiers={sponsorTiers} />
         <DonationsLedger donations={donations} />
