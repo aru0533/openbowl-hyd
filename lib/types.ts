@@ -20,7 +20,7 @@ export type ReceiptLineItem = {
   amount: Paise;
 };
 
-export type ExpenseCategory = "food" | "medical";
+export type ExpenseCategory = "dry-food" | "fresh-meals" | "medical";
 
 export type Expense = {
   id: string;

@@ -31,8 +31,10 @@ components/           One component per file, kebab-case filenames
   balance-banner.tsx        Section 1 — Collected / Spent / Balance
   sponsor-section.tsx       Section 2 — preset cards + custom amount (client)
   sponsor-preview-modal.tsx Razorpay placeholder modal (client)
-  donations-ledger.tsx      Section 3 — verified donations w/ RRN
-  expense-feed.tsx          Section 4 — spend entries w/ receipt + photo proof
+  donations-ledger.tsx      Section 3 — verified donations w/ RRN (server shell)
+  donations-ledger-list.tsx RRN / donor search + ledger table/cards (client)
+  expense-feed.tsx          Section 4 — spend entries w/ receipt + photo proof (server shell)
+  expense-feed-list.tsx     Category filter pills + expense cards (client)
   feeding-photo-placeholder.tsx  Inline-SVG photo frame (no external images)
   receipt-preview.tsx       Expandable itemised shop receipt
   site-footer.tsx
@@ -66,7 +68,8 @@ lib/
 
 ### Components
 - Server Components by default. Add `"use client"` only to the leaf that needs
-  state/effects/browser APIs (currently `sponsor-section` and `sponsor-preview-modal`).
+  state/effects/browser APIs (currently `sponsor-section`, `sponsor-preview-modal`,
+  `donations-ledger-list` and `expense-feed-list`).
 - Data fetching/derivation happens in `app/page.tsx` (later: server-side Supabase
   calls); components receive plain props and stay presentational.
 - No external image URLs. Placeholders are inline SVG/CSS so nothing breaks.
