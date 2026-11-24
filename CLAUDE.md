@@ -28,6 +28,7 @@ app/
   globals.css         Tailwind import + theme tokens
 components/           One component per file, kebab-case filenames
   site-header.tsx
+  leo-tribute.tsx           Hero — "Leo's Legacy" dedication, portrait (/leo.jpg) + story
   balance-banner.tsx        Section 1 — Collected / Spent / Balance
   sponsor-section.tsx       Section 2 — preset cards + custom amount (client)
   sponsor-preview-modal.tsx Razorpay placeholder modal (client)
@@ -72,7 +73,8 @@ lib/
   `donations-ledger-list` and `expense-feed-list`).
 - Data fetching/derivation happens in `app/page.tsx` (later: server-side Supabase
   calls); components receive plain props and stay presentational.
-- No external image URLs. Placeholders are inline SVG/CSS so nothing breaks.
+- No external image URLs. Placeholders are inline SVG/CSS so nothing breaks. The
+  only raster image is `public/leo.jpg` (via `next/image`) in the tribute hero.
 
 ### UI
 - **Mobile-first**: write base classes for ~360px screens, then layer `sm:`/`md:`/`lg:`.
