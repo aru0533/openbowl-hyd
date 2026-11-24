@@ -155,7 +155,7 @@ export const expenses: readonly Expense[] = [
   {
     id: "exp_006",
     description: "20kg Drools Adult Dry Food + 2 Trays Eggs",
-    category: "food",
+    category: "dry-food",
     amount: 4_620_00,
     date: "2026-11-20",
     area: "ECIL / Kapra Zone",
@@ -170,7 +170,7 @@ export const expenses: readonly Expense[] = [
   {
     id: "exp_005",
     description: "15kg Rice + 8kg Chicken + Broth Ingredients",
-    category: "food",
+    category: "fresh-meals",
     amount: 2_900_00,
     date: "2026-11-18",
     area: "Tarnaka / Habsiguda",
@@ -217,7 +217,7 @@ export const expenses: readonly Expense[] = [
   {
     id: "exp_002",
     description: "10kg Puppy Starter + 20L Milk for 9 Puppies",
-    category: "food",
+    category: "dry-food",
     amount: 3_950_00,
     date: "2026-11-09",
     area: "Uppal / Nacharam",
@@ -232,7 +232,7 @@ export const expenses: readonly Expense[] = [
   {
     id: "exp_001",
     description: "2 Trays Eggs + 10kg Rice + 5kg Curd",
-    category: "food",
+    category: "fresh-meals",
     amount: 1_370_00,
     date: "2026-11-06",
     area: "Kukatpally / KPHB",
